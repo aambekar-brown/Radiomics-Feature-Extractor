@@ -22,30 +22,16 @@ This tool performs radiomic feature extraction from medical images in both 2D an
    ```
 2. **Install Virtual Environment and all dependencies on your local machine**:
 
-   **Option 1: Using Python's `venv`**
-
-   - On **Windows**:
-     ```bash
-     python -m venv fe_env
-     call fe_env\Scripts\activate
-     pip install -r requirements.txt
-     ```
-
-   - On **macOS/Linux**: 
-     ```bash
-     python3 -m venv fe_env
-     source fe_env/bin/activate
-     pip install -r requirements.txt
-     ```
-
-   **Option 2: Using `conda`**
+   **Using `conda`**
 
    - On **Windows/macOS/Linux**:
      ```bash
      conda create --name fe_env python=3.7
      conda activate fe_env
      pip install -r requirements.txt
+     conda install -c simpleitk SimpleITK
      ```
+
    **Note for macOS and Linux users**: If tkinter is not installed on your system, you can install it as follows:
    
    - On macOS (if using Homebrew):
