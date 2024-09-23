@@ -1,4 +1,3 @@
 numpy
 SimpleITK
 pyradiomics
-tkinter

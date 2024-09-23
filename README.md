@@ -20,7 +20,7 @@ This tool performs radiomic feature extraction from medical images in both 2D an
    git clone https://github.com/aambekar-brown/Radiomics-Feature-Extractor.git
    cd Radiomics-Feature-Extractor
    ```
-2. **Install Virtual Environment on your local machine**:
+2. **Install Virtual Environment and all dependencies on your local machine**:
 
    **Option 1: Using Python's `venv`**
 
@@ -31,7 +31,7 @@ This tool performs radiomic feature extraction from medical images in both 2D an
      pip install -r requirements.txt
      ```
 
-   - On **macOS/Linux**:
+   - On **macOS/Linux**: 
      ```bash
      python3 -m venv fe_env
      source fe_env/bin/activate
@@ -46,6 +46,18 @@ This tool performs radiomic feature extraction from medical images in both 2D an
      conda activate fe_env
      pip install -r requirements.txt
      ```
+   - **Note for macOS and Linux users**: If tkinter is not installed on your system, you can install it as follows:
+   
+   - On macOS (if using Homebrew):
+     ```bash
+     brew install python-tk
+     ```
+   
+   - On Linux (Debian/Ubuntu-based distros):
+     ```bash
+     sudo apt-get install python3-tk
+     ```
+
 4. **Run Feature Extractor**:
    ```bash
    cd code
