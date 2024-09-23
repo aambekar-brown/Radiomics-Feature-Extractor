@@ -3,6 +3,8 @@
 ## Overview
 This tool performs radiomic feature extraction from medical images in both 2D and 3D formats, such as `.nii`, `.png`, and `.jpeg`. It generates CSV files containing various radiomic features based on selected categories: shape, first-order, wavelet, and texture features.
 
+![Alt text](img/UI.png)
+
 ## Features
 - Supports both 3D medical images (NIfTI format) and 2D image formats (PNG, JPEG).
 - Handles multiple label masks as well as binary masks.
