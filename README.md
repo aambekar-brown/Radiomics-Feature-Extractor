@@ -46,7 +46,7 @@ This tool performs radiomic feature extraction from medical images in both 2D an
      conda activate fe_env
      pip install -r requirements.txt
      ```
-   - **Note for macOS and Linux users**: If tkinter is not installed on your system, you can install it as follows:
+   **Note for macOS and Linux users**: If tkinter is not installed on your system, you can install it as follows:
    
    - On macOS (if using Homebrew):
      ```bash
