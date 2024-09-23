@@ -18,8 +18,8 @@ This tool performs radiomic feature extraction from medical images in both 2D an
    ```
 2. **Install Virtual Enviornment on your local machine**:
   ```bash
-  python -m venv venv3_7
-  call activate venv3_7
+  python -m venv fe_env
+  call activate fe_env
   pip install -r requirements.txt
   ```
 3. **Run Feature Extractor**:
