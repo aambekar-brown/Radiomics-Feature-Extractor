@@ -435,7 +435,7 @@ for i, feature_type in enumerate(feature_buttons):
     btn_feature.grid(row=0, column=i, padx=5, pady=5)
     feature_buttons_widgets.append(btn_feature)
 
-label_output = ttk.Label(frame_output, text="Output:")
+label_output = ttk.Label(frame_output, text="Output Console:")
 label_output.pack(anchor="w", padx=5, pady=5)
 
 output_panel = scrolledtext.ScrolledText(frame_output, width=80, height=10, wrap=tk.WORD)
