@@ -12,6 +12,7 @@ This tool performs radiomic feature extraction from medical images in both 2D an
 - Handles multiple label masks as well as binary masks.
 - Outputs feature data as CSV files.
 - Intuitive UI with buttons to select the type of features for extraction.
+- Important Note: Ensure that the image and mask filenames are identical, with '_mask' added to the mask file's name. For example, if the image file is 'Imagename.png' or 'Imagename.nii,' the corresponding mask file should be 'Imagename_mask.png' or 'Imagename_mask.nii.
 
 ## Usage Instructions
 1. **Download the repository**:
