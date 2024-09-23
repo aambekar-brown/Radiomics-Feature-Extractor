@@ -373,7 +373,7 @@ def run_feature_extraction(feature_type=None):
 
 
 root = tk.Tk()
-root.title("Feature Extractor")
+root.title("Radiomics Feature Extractor")
 
 style = ttk.Style(root)
 style.theme_use("clam")
