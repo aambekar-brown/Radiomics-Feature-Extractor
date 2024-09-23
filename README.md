@@ -17,16 +17,16 @@ This tool performs radiomic feature extraction from medical images in both 2D an
    cd Radiomics-Feature-Extractor
    ```
 2. **Install Virtual Enviornment on your local machine**:
-  ```bash
-  python -m venv fe_env
-  call activate fe_env
-  pip install -r requirements.txt
-  ```
+   ```bash
+   python -m venv fe_env
+   call activate fe_env
+   pip install -r requirements.txt
+   ```
 3. **Run Feature Extractor**:
-  ```bash
-  cd code
-  Feature_Extractor.bat
-  ```
+   ```bash
+   cd code
+   Feature_Extractor.bat
+   ```
 
 ## References
 [1] B. H. Menze, A. Jakab, S. Bauer, J. Kalpathy-Cramer, K. Farahani, J. Kirby, et al. "The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)", IEEE Transactions on Medical Imaging 34(10), 1993-2024 (2015) DOI: 10.1109/TMI.2014.2377694
