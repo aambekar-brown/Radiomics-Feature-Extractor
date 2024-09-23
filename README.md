@@ -22,7 +22,7 @@ This tool performs radiomic feature extraction from medical images in both 2D an
   call activate venv3_7
   pip install -r requirements.txt
   ```
-2. **Run Feature Extractor**:
+3. **Run Feature Extractor**:
   ```bash
   cd code
   Feature_Extractor.bat
