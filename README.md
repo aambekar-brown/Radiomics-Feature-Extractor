@@ -29,8 +29,8 @@ This tool performs radiomic feature extraction from medical images in both 2D an
      ```bash
      conda create --name fe_env python=3.7
      conda activate fe_env
-     pip install -r requirements.txt
      conda install -c simpleitk SimpleITK
+     pip install -r requirements.txt
      ```
 
    **Note for macOS and Linux users**: If tkinter is not installed on your system, you can install it as follows:
