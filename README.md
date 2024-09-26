@@ -24,6 +24,7 @@ This tool performs radiomic feature extraction from medical images in both 2D an
 2. **Install Virtual Environment and all dependencies on your local machine**:
 
    **Using `conda`**
+   - Instructions to install conda: https://docs.anaconda.com/miniconda/miniconda-install/
 
    - On **Windows/macOS/Linux**:
      ```bash
