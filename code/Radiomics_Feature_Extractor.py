@@ -344,8 +344,8 @@ def run_feature_extraction(feature_type=None):
     masks_type = determine_image_type(mask_folder)
     
     # Update the output panel with the detected image types
-    output_panel.insert(tk.END, f"Image Folder Type: {images_type.split('')[-1]}\n")
-    output_panel.insert(tk.END, f"Mask Folder Type: {masks_type.split('')[-1]}\n")
+    output_panel.insert(tk.END, f"Image Folder Type: {images_type.split(' ')[-1]}\n")
+    output_panel.insert(tk.END, f"Mask Folder Type: {masks_type.split(' ')[-1]}\n")
     output_panel.see(tk.END)
 
     masks_folders = mask_folder
