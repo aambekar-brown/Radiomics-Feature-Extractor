@@ -272,13 +272,13 @@ def determine_image_type(folder_path):
 
     # Return detected image type
     if png_files:
-        return "💡 2D Image"
+        return "2D Image"
     elif jpeg_files:
-        return "💡 2D Image"
+        return "2D Image"
     elif nii_files:
-        return "💡 3D Image"
+        return "3D Image"
     else:
-        return "💡 Unkown Image Dimension"
+        return "Unkown Image Dimension"
 
 def select_image_folder():
     folder_path = filedialog.askdirectory(title="Select Image Folder")
@@ -344,16 +344,16 @@ def run_feature_extraction(feature_type=None):
     masks_type = determine_image_type(mask_folder)
     
     # Update the output panel with the detected image types
-    output_panel.insert(tk.END, f"Image Folder Type: {images_type.split('💡 ')[-1]}\n")
-    output_panel.insert(tk.END, f"Mask Folder Type: {masks_type.split('💡 ')[-1]}\n")
+    output_panel.insert(tk.END, f"Image Folder Type: {images_type.split('')[-1]}\n")
+    output_panel.insert(tk.END, f"Mask Folder Type: {masks_type.split('')[-1]}\n")
     output_panel.see(tk.END)
 
     masks_folders = mask_folder
     output_csv_path = os.path.normpath(os.path.join(output_folder, f'extracted_features_{feature_type}.csv'))
 
-    if images_type == "💡 2D Image" and masks_type == "💡 2D Image":
+    if images_type == "2D Image" and masks_type == "2D Image":
         extraction_function = extract_features_from_multiple_images_2d
-    elif images_type == "💡 3D Image" and masks_type == "💡 3D Image":
+    elif images_type == "3D Image" and masks_type == "3D Image":
         extraction_function = extract_features_from_multiple_images_3d
     else:
         output_panel.insert(tk.END, f"Error: Mismatch between image and mask dimensions. Please ensure both are either 2D or 3D.\n")
@@ -418,7 +418,7 @@ btn_output_folder.grid(row=2, column=2, padx=5)
 image_type_label = ttk.Label(frame_paths, text="")
 image_type_label.grid(row=3, column=1, padx=5, pady=5, sticky="ew")
 
-bulb_label = ttk.Label(frame_paths, text="💡 No Image Path Selected")  # Initial state
+bulb_label = ttk.Label(frame_paths, text="No Image Path Selected")  # Initial state
 bulb_label.grid(row=3, column=2, padx=5)
 
 frame_paths.columnconfigure(1, weight=1)
