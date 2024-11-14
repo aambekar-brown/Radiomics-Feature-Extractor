@@ -1,4 +1,4 @@
 @echo off
-call activate venv3_7
+call activate fe_env
 python "Radiomics_Feature_Extractor.py"
 call conda deactivate
